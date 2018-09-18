@@ -3,6 +3,14 @@
   <groupId>emolumentos-bovespa</groupId>
   <artifactId>emolumentos</artifactId>
   <version>0.0.1</version>
+ <dependencies>
+ 	<dependency>
+ 		<groupId>org.apache.commons</groupId>
+    	<artifactId>commons-csv</artifactId>
+    	<version>1.5</version>
+	</dependency>
+ </dependencies>
+  
   <build>
 	  <plugins>
 			<plugin>
