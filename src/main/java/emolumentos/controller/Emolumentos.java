@@ -1,15 +1,10 @@
 package emolumentos.controller;
 
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.Scanner;
 import java.util.logging.Logger;
@@ -27,8 +22,6 @@ public class Emolumentos {
 	private static final String TESTE_CSV_FILE = "C:\\Acoes\\Acoes.csv";
 	
 	public static void main(String[] args) {
-		
-		// Lê os dados da tela
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.print("Data (DD/MM/YYYY): ");
@@ -128,7 +121,7 @@ public class Emolumentos {
 		
 		scanner.close();
 	}
-
+	
 	private static void buildCSV(String date, String compraOuVenda, String papel, short qtdPapel, BigDecimal papelValue,
 			BigDecimal taxaLiquidacao, BigDecimal emolumentosCSV, BigDecimal taxaCorretagem, BigDecimal totalValuePapers,
 			BigDecimal totalValue) {
